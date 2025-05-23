@@ -4,6 +4,10 @@ import java.util.*;
 
 public class E01MeetingRooms {
 
+    public int minMeetingRooms(ArrayList<ed.lab.MeetingInterval> meetingIntervals) {
+        return 0;
+    }
+
     public class MeetingInterval {
         public int start;
         public int end;
