@@ -10,10 +10,11 @@ public class E02Logger {
     }
 
     public boolean shouldPrintMessage(int timestamp, String message) {
-        if (!mensajes.containsKey(message)) {
+        if (!mensajes.containsKey(message) || timestamp >= mensajes.get(message)) {
             mensajes.put(message, timestamp + 10);
             return true;
         }
+
         return false;
     }
 }
